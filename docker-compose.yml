@@ -1,9 +1,10 @@
 version: '3.8'
 services:
   php:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: helpdesk
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
     ports:
       - "5541:80"
       - "3306:3306"
