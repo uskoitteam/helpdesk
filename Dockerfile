@@ -7,5 +7,8 @@ RUN apt-get update && \
 #RUN apk update && apk add tzdata
 #RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY src/ /var/www/html/
+RUN chmod 666 /var/www/html/hesk_settings.inc.php
+RUN chmod -R 777 /var/www/html/attachments
+RUN chmod -R 666 /var/www/html/cache
 EXPOSE 5541
 EXPOSE 3306
