@@ -9,3 +9,5 @@ services:
       - "3306:3306"
     volumes:
       - ./src:/var/www/html
+    deploy:
+      replicas: 3
