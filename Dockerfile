@@ -6,7 +6,7 @@ RUN apt-get update && \
     docker-php-ext-install mysqli pdo_mysql zip
 
 COPY src/ /var/www/html/
-RUN chmod 666 hesk_settings.inc.php
+RUN chmod 666 /var/www/html/hesk_settings.inc.php
 RUN chmod -R 777 attachments/
 RUN chmod -R 666 cache/
 EXPOSE 5541
