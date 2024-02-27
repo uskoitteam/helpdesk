@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5544:80"
+    volumes:
+      - ./src:/var/www/html
