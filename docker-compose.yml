@@ -14,4 +14,5 @@ services:
     deploy:
       replicas: 1
     networks:
-      - helpdesk_network
+      helpdesk_network:
+        external: true
