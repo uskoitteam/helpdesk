@@ -11,3 +11,5 @@ services:
       - ./src:/var/www/html
     deploy:
       replicas: 3
+    networks:
+      - helpdesk_network
