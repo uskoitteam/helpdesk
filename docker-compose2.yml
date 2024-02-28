@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  php-helpdesk:
+    image: php-helpdesk
+    deploy:
+      replicas: 3
+    ports:
+      - "5549:80"
