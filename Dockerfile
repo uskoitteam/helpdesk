@@ -8,6 +8,7 @@ COPY src/ /var/www/html/
 #RUN chmod 666 /var/www/html/hesk_settings.inc.php && \
 #    chmod -R 777 /var/www/html/attachments/ && \
 #    chmod -R 666 /var/www/html/cache/
+RUN chown www-data:www-data /var/www/html/hesk_settings.inc.php
 RUN chmod 666 /var/www/html/hesk_settings.inc.php
 RUN chmod -R 777 /var/www/html/attachments/
 RUN chmod -R 666 /var/www/html/cache/
