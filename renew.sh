@@ -1,11 +1,11 @@
 echo crate image.......................................................................................
-docker image build -t helpdesk .
+docker image build -t helpdesk:1 .
 
 echo crate service.....................................................................................
 docker service create --name helpdesk\
-                      --replicas 3 \
+                      --replicas 1 \
                       --publish published=5549,target=5549 \
-                        helpdesk
+                        helpdesk:1
 
 
 

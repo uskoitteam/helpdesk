@@ -4,7 +4,6 @@ LABEL authors="mtsybulskyi"
 RUN apt-get update && \
     apt-get install -y libzip-dev && \
     docker-php-ext-install mysqli pdo_mysql zip
-
 COPY src/ /var/www/html/
 RUN chmod 666 /var/www/html/hesk_settings.inc.php && \
     chmod -R 777 /var/www/html/attachments/ && \
