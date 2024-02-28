@@ -9,5 +9,5 @@ COPY src/ /var/www/html/
 RUN chmod 666 /var/www/html/hesk_settings.inc.php && \
     chmod -R 777 /var/www/html/attachments/ && \
     chmod -R 666 /var/www/html/cache/
-EXPOSE 5541
+EXPOSE 5549
 EXPOSE 3306

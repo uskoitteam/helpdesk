@@ -1,10 +1,11 @@
+# BAD
 version: '3.8'
 services:
   php:
-#    image: helpdesk
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: helpdesk
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
     ports:
       - "5541:5541"
       - "3306:3306"
