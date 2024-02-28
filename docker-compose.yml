@@ -1,5 +1,7 @@
 version: '3.8'
-
+networks:
+  helpdesk_network:   # Define a custom network
+    driver: bridge    # You can specify the driver if needed
 services:
   helpdesk:
     build:
