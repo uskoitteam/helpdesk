@@ -14,4 +14,4 @@ RUN chmod -R 777 /var/www/html/attachments/
 RUN chown www-data:www-data /var/www/html/cache/
 RUN chmod -R 666 /var/www/html/cache/
 #EXPOSE 5549
-#EXPOSE 3306
+EXPOSE 3306
